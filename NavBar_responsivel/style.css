@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 30px;
+    margin: 0;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo,
+#menu-icon {
+    background: url('https://raw.githubusercontent.com/alura-cursos/alurabooks/2c2d01dce8fb86198de987b04a64befeb3b72ba1/img/Menu.svg') no-repeat;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-left: 900px;
+    display: block;
+    cursor: pointer;
+}
+
+#menu-content {
+    display: none;
+    position: absolute;
+    top: 200px; 
+    right: 100px; 
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#menu-checkbox {
+    display: none; 
+}
+
+#menu-checkbox:checked+#menu-content {
+    display: block; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    margin: auto;
+    text-align: end;
+    display: inline;
+    margin-right: 10px;
+}
+@media screen and (max-width: 800px){
+#logo, #menu-icon{
+    background: url('https://raw.githubusercontent.com/alura-cursos/alurabooks/2c2d01dce8fb86198de987b04a64befeb3b72ba1/img/Menu.svg') no-repeat;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-left: 100px;
+    display: block;
+    cursor: pointer;
+}
+#menu-content{
+    margin: 20px;
+}
+li{
+    margin: 10px;
+    margin-top: 30px;
+}
+}
